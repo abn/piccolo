@@ -1,0 +1,8 @@
+FROM scratch
+MAINTAINER Arun Neelicattu <arun.neelicattu@gmail.com>
+
+ADD ./rootfs/java /java
+ADD ./rootfs/usr /usr
+ADD ./rootfs/lib64 /lib64
+
+VOLUME ["/var/log", "/var/run"]
